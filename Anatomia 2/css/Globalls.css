@@ -1,0 +1,30 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", Helvetica, sans-serif; /* Ensure consistent font */
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px; /* Improve focus visibility */
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Ensure links inherit text color */
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* Ensure images are responsive */
+}
