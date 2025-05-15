@@ -1,0 +1,25 @@
+:root {
+  --subheading-font-family: "Inter", Helvetica;
+  --subheading-font-weight: 400;
+  --subheading-font-size: 1.5rem; /* Adjusted for responsiveness */
+  --subheading-letter-spacing: 0px;
+  --subheading-line-height: 1.5;
+  --subheading-font-style: normal;
+  --body-text-font-family: "Inter", Helvetica;
+  --body-text-font-weight: 500;
+  --body-text-font-size: 1.25rem; /* Adjusted for responsiveness */
+  --body-text-letter-spacing: 0px;
+  --body-text-line-height: 1.5;
+  --body-text-font-style: normal;
+  --small-text-font-family: "Inter", Helvetica;
+  --small-text-font-weight: 500;
+  --small-text-font-size: 1rem; /* Adjusted for responsiveness */
+  --small-text-letter-spacing: 0px;
+  --small-text-line-height: 1.5;
+  --small-text-font-style: normal;
+  --button-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  --variable-collection-spacing-s: 1.5rem; /* Adjusted for responsiveness */
+  --variable-collection-spacing-m: 3rem; /* Adjusted for responsiveness */
+  --page-max-width: 100%; /* Ensure full width */
+  --page-max-height: 100vh; /* Ensure full height */
+}

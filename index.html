@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/Globalls.css" />
+    <link rel="stylesheet" href="../css/sttyleguide.css" />
+    <link rel="stylesheet" href="../css/sttyleInicio.css" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="landing-page">
+        <div class="div">
+            <!-- Header Section -->
+            <header>
+                <div class="text-wrapper-11">Anatomia del Torax</div>
+            </header>
+
+            <!-- Description and 3D Model Section -->
+            <div class="description-model-container">
+                <p>
+                    Es una de las regiones más importantes del cuerpo humano. <br />Ubicado entre el cuello y el abdomen, esta
+                    estructura ósea y muscular es útil para la protección de órganos y en la facilitación de funciones clave
+                    como la respiración.<br />El tórax está compuesto por huesos, músculos, órganos y tejidos.<br />La columna
+                    vertebral, las costillas y el esternón forman su estructura ósea, <br />Los músculos intercostales y el
+                    diafragma permiten los movimientos respiratorios. <br />En su interior se localiza principalmente el
+                    corazón, los pulmones, el esófago y grandes vasos sanguíneos.
+                </p>
+                <model-viewer src="Pulmon.glb" alt="Modelo 3D de los pulmones" auto-rotate camera-controls 
+                              style="width: 100%; max-width: 400px; height: 300px; margin-left: 20px;">
+                </model-viewer>
+            </div>
+
+            <!-- Main Systems Section -->
+            <div class="text-wrapper-8">Sistemas Principales</div>
+        </div>
+
+        <!-- Cards Section -->
+        <div class="frame">
+            <a href="musculoesqueletico.html" class="card">
+                <div class="image" style="background-image: url('ginecomastia-pecho-en-el-hombre-clinicas-vitaluz-sevilla.jpg');" data-hover-image="images.jpeg"></div>
+                <div class="copy">
+                    <div class="section-wrapper">
+                        <div class="text-wrapper-9">Sistema Musculoesqueletico</div>
+                        <div class="text-wrapper-10">Músculos intrínsecos<br />Músculos extrínsecos.</div>
+                    </div>
+                </div>
+            </a>
+            <a href="organos.html" class="card">
+                <div class="image-2" style="background-image: url('ginecomastia-pecho-en-el-hombre-clinicas-vitaluz-sevilla.jpg');" data-hover-image="3d-atlas-main.webp"></div>
+                <div class="copy">
+                    <div class="section-wrapper">
+                        <div class="text-wrapper-9">Organos</div>
+                        <div class="text-wrapper-10">Esenciales para las funciones críticas para mantener la vida.</div>
+                    </div>
+                </div>
+            </a>
+            <a href="sanguineo.html" class="card">
+                <div class="image-3" style="background-image: url('ginecomastia-pecho-en-el-hombre-clinicas-vitaluz-sevilla.jpg');" data-hover-image="depositphotos_255341670-stock-photo-human-heart-with-vesselsribcage-and.jpg"></div>
+                <div class="copy">
+                    <div class="section-wrapper">
+                        <div class="text-wrapper-9">Sistema Sanguineo</div>
+                        <div class="text-wrapper-10">Desde grandes vasos como la aorta y su ramificaciones.</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hoverEffect = (selector) => {
+                const element = document.querySelector(selector);
+                const originalImage = element.style.backgroundImage;
+                const hoverImage = element.getAttribute("data-hover-image");
+
+                element.addEventListener("mouseenter", () => {
+                    element.style.backgroundImage = `url('${hoverImage}')`;
+                });
+
+                element.addEventListener("mouseleave", () => {
+                    element.style.backgroundImage = originalImage;
+                });
+            };
+
+            hoverEffect(".image");
+            hoverEffect(".image-2");
+            hoverEffect(".image-3"); // Add hover effect for Sistema Sanguineo
+        });
+    </script>
+</body>
+</html>
